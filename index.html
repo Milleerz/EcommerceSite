@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+<!--HEAD-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Goodgame - Aluno: Miller </title>
+
+  <!--Icone topo do site-->
+  <link rel="icon" type="image/png" href="./assets/images/iconGG.png"/>
+  
+  <!---Customização Css Link-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--Fontes link google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<!--BODY-->
+<body>
+
+<!--HEADER-->
+<header>
+    <div class="header-top">
+      <div class="container">
+        <div class="header-alert-news">
+          <p>
+            Email: Goodgame@senai.com - Telefone: (85) 3421.5300
+          </p>
+        </div>
+      </div>
+    </div>
+
+<div class="header-main">
+
+  <div class="container">
+        <!---logo do site -->
+        <a href="./index.html" class="header-logo">
+          <img src="./assets/images/LogoGG.png" alt="GoodGame" width="150" height="150">
+        </a> 
+    
+        <!--Barra de pesquisa de produtos-->
+        <div class="header-search-container">
+          <input type="search" name="search" class="search-field" placeholder="Insira o nome do produto...">
+
+          <!--Botão de pesquisa-->
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon
+          </button>
+        </div>
+
+    <!--Botões: usuário, favoritos e sacola-->
+    <div class="header-user-actions">
+          <!--usuário-->
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+          <!--favoritos-->
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">10</span>
+          </button>
+          <!--Sacola-->
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">5</span>
+          </button>
+    </div>
+  </div>
+</div>
+
+<!--Volte Sempre Popup-->
+<!--<div class="popup" id="popup-1">
+  <div class="overlay"> 
+    <div class="content">
+      <div class="close-btn" onclick="togglepopup()">&times;</div>
+      <h1>Volte Sempre!</h1>
+      <p>Obrigado pelo seu acesso, até o próximo. Que a força Esteja com você!</p>
+    </div>
+  </div>
+</div>
+
+<button onclick="togglepopup()">Show popup></button>
+
+<!--Inicio, categorias, sobre, contatos, promos-->
+<nav class="desktop-navigation-menu">
+  <div class="container">
+
+    <ul class="desktop-menu-category-list">
+      
+        <li class="menu-category">
+        <!--Botão"Pagina inicial"-->
+        <a href="#" class="menu-title">Início</a>
+        </li>
+        
+        <!--Categorias-->
+        <li class="menu-category"> 
+        <a href="#" class="menu-title">Categorias</a>
+            
+            <!--Div "Efeito drop"-->
+            <div class="dropdown-panel">
+            
+            <!--Aba Consoles-->
+            <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Consoles</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Playstation</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Microsoft</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Nitendo</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#"></a>
+                </li>
+
+            </ul>
+
+            <!--Aba jogos-->
+            <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Jogos</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mídia física</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mídia digital</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Gift card</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#"></a>
+                </li>
+
+            </ul>
+
+            <!--Aba Vestuário geek-->
+            <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Vestúario geek</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Camisas</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Moletons</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Acessórios</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#"></a>
+                </li>
+
+
+
+            </ul>
+          
+            <!--Aba Livros e quadrinhos-->
+            <ul class="dropdown-panel-list">
+                <li class="menu-title">
+                  <a href="#">Livros/Quadrinhos</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Marvel</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">DC</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Outros</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#"></a>
+                </li>
+
+    </ul>
+  </div>
+        <!--Sobre nós-->
+          <li class="menu-category">
+          <a href="#" class="menu-title">Sobre nós</a>
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Quem somos</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Política de privacidade</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Perguntas Frequentes</a>
+              </li>
+            </ul>
+
+          <!--Promoções-->
+          <li class="menu-category">
+            <a href="#" class="menu-title">Promoções</a>
+          </li>
+
+    </ul>
+  </div>
+</nav>
+
+</header>
+
+    <!--Banners-->
+    <div class="banner">
+      <div class="container">
+        <div class="slider-container has-scrollbar">
+          
+          <!--Banner #1-->
+          <div class="slider-item">
+            <img src="./assets/images/Banner1GG.png" alt="Banner1" class="banner-img">
+            <div class="banner-content">
+            </div>
+          </div>
+
+          <!--Banner #2-->
+          <div class="slider-item">
+            <img src="./assets/images/Banner2GG.png" alt="Banner2" class="banner-img">
+            <div class="banner-content">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Colunas de produtos-->
+  <div class="product-container">
+    <div class="container">
+        <div class="product-box">
+          <div class="product-minimal">
+
+            <!--Jogos-->
+            <div class="product-showcase">
+              <h2 class="title">Jogos</h2>
+              <div class="showcase-wrapper has-scrollbar">
+                
+                <!--Coluna1 "Jogos"-->
+                <div class="showcase-container">
+                  <!--Produto1-->
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/Grade de produtos/TLOU1.png" alt="Prod1" width="65" class="showcase-img">
+                    </a>
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">The Last Of Us Part I (PS4)</h4>
+                      </a>
+                      <div class="price-box">
+                        <p class="price">R$ 100,00</p>
+                        <del>R$ 120,00</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--Produto2-->
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/Grade de produtos/FH4.png" alt="Prod2" class="showcase-img" width="70">
+                    </a>                
+                    <div class="showcase-content">                 
+                      <a href="#">
+                        <h4 class="showcase-title">Forza Horizon 4 (Xbox One) </h4>
+                      </a>                              
+                      <div class="price-box">
+                        <p class="price">R$ 100,00</p>
+                        <del>R$ 150,00</del>
+                      </div>               
+                    </div>
+                  
+                  </div>
+
+                  <!--Produto3-->
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/Grade de produtos/JFO1.png" alt="Prod3" class="showcase-img" width="70">
+                    </a>
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Star Wars: Jedi Fallen Order <br>(PS4)</h4>
+                      </a>
+                      <div class="price-box">
+                        <p class="price">R$ 90,00</p>
+                        <del>R$ 120,00</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <!--Produto4-->
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/Grade de produtos/Zelda.jpg" alt="Prod4" class="showcase-img" width="70">
+                    </a>
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Zelda: Breath Of The Wild <br>(Nintendo Switch)</h4>
+                      </a>
+                      <div class="price-box">
+                        <p class="price">R$ 220,00</p>
+                        <del>R$ 300,00</del>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+ 
+            <!--Vestuário Geek-->
+            <div class="product-showcase">
+              <h2 class="title">Vestuário Geek</h2>
+              <div class="showcase-wrapper  has-scrollbar">
+                <div class="showcase-container">
+                  
+                  <!--Produto1-->
+                  <div class="showcase">   
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/Grade de produtos/Camisa.png" alt="Prod1" class="showcase-img" width="80">
+                    </a>
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Camisa God Of War - Kratos</h4>
+                      </a>
+                      <div class="price-box">
+                        <p class="price">R$ 35,00</p>
+                        <del>R$ 60,00</del>
+                      </div>
+                    </div>         
+                  </div>
+                  
+                  <!--Produto2-->
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/Grade de produtos/Boné.jfif" alt="Prod2" class="showcase-img" width="90">
+                    </a>
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Boné Geek Botões De Console</h4>
+                      </a>
+                      <div class="price-box">
+                        <p class="price">R$ 25,00</p>
+                        <del>R$ 50,00</del>
+                      </div>      
+                    </div>           
+                  </div>
+            
+                  <!--Produto3-->
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/Grade de produtos/Moletom.png" alt="Prod3" class="showcase-img" width="90">
+                    </a>
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Moletom Homem aranha <br>(unissex)</h4>
+                      </a> 
+                      <div class="price-box">
+                        <p class="price">R$ 100,00</p>
+                        <del>R$ 120,00</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--Produto4-->
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/Grade de produtos/Moletom2.jpg" alt="Prod4" class="showcase-img" width="80">
+                    </a>
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Moletom Geek Gamer Over <br>(unissex)</h4>
+                      </a>
+                      <div class="price-box">
+                        <p class="price">R$ 120,00</p>
+                        <del>R$ 150,00</del>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+  
+            <!--Livros e quadrinhos-->
+            <div class="product-showcase">
+              <h2 class="title">Livros e quadrinhos</h2>
+              <div class="showcase-wrapper  has-scrollbar">
+                <div class="showcase-container">
+            
+                  <!--Produto1-->
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/Grade de produtos/Aneis.png" alt="Prod1" class="showcase-img" width="100">
+                    </a>
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Trilogia Senhor dos Aneis</h4>
+                      </a>
+                      <div class="price-box">
+                        <p class="price">R$ 200,00</p>
+                        <del>R$ 300,00</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--Produto2-->
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/Grade de produtos/Witcher.png" alt="Prod2" class="showcase-img" width="100">
+                    </a>
+                    <div class="showcase-content">
+                      <a href="#">
+                        <h4 class="showcase-title">Box de Livros The Witcher <br>(Versão Clássica)</h4>
+                      </a>        
+                      <div class="price-box">
+                        <p class="price">R$ 350,00</p>
+                        <del>R$ 400,00</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--Produto3-->
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/Grade de produtos/Hannibal.jpg" alt="Prod3" class="showcase-img" width="70">
+                    </a>           
+                    <div class="showcase-content">            
+                      <a href="#">
+                        <h4 class="showcase-title">Hannibal: A Origem Do Mal</h4>
+                      </a>
+                      <div class="price-box">
+                        <p class="price">R$ 30,00</p>
+                        <del>R$ 50,00</del>
+                      </div>
+                    </div>           
+                  </div>
+
+                  <!--Produto4-->
+                  <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/Grade de produtos/Marvel.jpg" alt="Prod4" class="showcase-img" width="70">
+                    </a>
+                    <div class="showcase-content">           
+                      <a href="#">
+                        <h4 class="showcase-title">HQ Marvel: Guerra Infinita</h4>
+                      </a>
+                      <div class="price-box">
+                        <p class="price">R$ 60,00</p>
+                        <del>R$ 120,00</del>
+                      </div>
+                    </div>
+                  </div>
+                </div>              
+              </div>
+          </div> 
+    
+    <!--Novos produtos-->
+    <div class="product-main">
+        <h2 class="title">Novos produtos</h2>
+          <div class="product-grid">
+
+              <!--Produto1-->
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/images/Novos produtos/darth.jpg" alt="Produto1" width="300" class="product-img default">
+                  <img src="./assets/images/Novos produtos/darth2.jpg" alt="Imagem2" width="300" class="product-img hover">
+                </div>
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Funko - Star Wars</a>
+                  <a>
+                    <h3 class="showcase-title"><b>Darth Vader</b></h3>
+                  </a>
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                  <!--Definir preço-->
+                  <div class="price-box">
+                    <p class="price">R$ 120,00</p>
+                  </div>
+                </div>
+              </div>
+
+              <!--Produto2-->
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/images/Novos produtos/Obi.jpg" alt="Produto2" class="product-img default" width="300">
+                  <img src="./assets/images/Novos produtos/Obi2.jpg" alt="imagem2" class="product-img hover" width="300">
+                </div>
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Funko - Star Wars</a>
+                  <h3>
+                    <a class="showcase-title"><b>Obiwan<br>Kenobi</b></a>
+                  </h3>
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                  <!--Definir preço-->
+                  <div class="price-box">
+                    <p class="price">R$ 120.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <!--Produto3-->
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/Novos produtos/Luke.jpg" alt="Produto3" class="product-img default" width="300">
+                  <img src="./assets/images/Novos produtos/Luke2.jpg" alt="Imagem3" class="product-img hover" width="300">
+                </div>
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Funko - Star Wars</a>
+                  <h3>
+                    <a href="#" class="showcase-title"><b>Luke<br>Skywalker</b></a>
+                  </h3>
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>    
+                  <!--Definir preço-->      
+                  <div class="price-box">
+                    <p class="price">R$ 120.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <!--Produto4-->
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/Novos produtos/Conde.jpg" alt="Produto4" class="product-img default" width="300">
+                  <img src="./assets/images/Novos produtos/Conde2.jpg" alt="Imagem4" class="product-img hover" width="300">
+                </div>
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Funko - Star Wars <br>(RARO)</a>
+                  <h3>
+                    <a href="#" class="showcase-title"><b>Conde<br>Dookan</b></a>
+                  </h3>
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                  <!--Definir preço-->
+                  <div class="price-box">
+                    <p class="price">R$ 220.00</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--FOOTER-->
+<footer>
+<div class="footer-nav">
+  <div class="container">
+    
+    <!--Institucional-->
+    <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Institucional</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sobre nós</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Políticas goodgame</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Política de Privacidade</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Termos de uso</a>
+          </li>
+
+    </ul>
+
+    <!--Serviços-->
+    <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Serviços</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Central de ajuda</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Rastreamento</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Devolução e reembolso</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Fale conosco</a>
+          </li>
+
+    </ul>
+
+    <!--ContatosFooter-->
+    <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contatos</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              Av. Padre Ibiapina, 1280 Jacarecanga 
+              <br> CEP: 60010-690, Fortaleza - CE </br>
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+607936-8058" class="footer-nav-link">(85) 3421.5300</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">Atendimento@goodgame.com</a>
+          </li>
+
+    </ul>
+ 
+  <!--Métodos de pagamento/Direitos reservados -->
+  <div class="footer-bottom">
+      <div class="container">
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+          <p class="copyright">
+            Copyright &copy; Matheus Miller &#x1F608 (Aluno Senai - Curso: Programador fullstack) all rights reserved.
+          </p>
+      </div>
+</div>
+</footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html> 
